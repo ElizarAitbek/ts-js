@@ -1,30 +1,19 @@
-"use strict";
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
 
-// const result = confirm("Are you here?");
-// console.log(result);
+const personalMovieBD = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    ganers: [],
+    privet: false
+};
 
-// const answer = prompt("You are gay?", "Enter your answer...");
-// console.log(typeof(answer));
+const a = prompt("Один из последних просмотренных фильмов", ""),
+      b = prompt("Насколько оцените его?", ""),
+      c = prompt("Один из последних просмотренных фильмов", ""),
+      d = prompt("Насколько оцените его?", "");
 
-// const answers = [];
+personalMovieBD.movies[a] = b;
+personalMovieBD.movies[c] = d;
 
-// answers[0] = prompt('How are you?');
-// answers[1] = +prompt('How old are you?');
-// answers[2] = prompt('How it going?');
-
-// console.log(answers);
-
-// const category = "toys";
-// console.log(`https://someurl.com/${category}/5`);
-
-// const name = "Ivan";
-// alert(`Good morning, ${name}`);
-
-let incr = 10,
-    decr = 10;
-
-incr++; // постфиксная запись
---decr; // префиксная запись
-
-console.log(incr);
-console.log(decr);
+console.log(personalMovieBD);
